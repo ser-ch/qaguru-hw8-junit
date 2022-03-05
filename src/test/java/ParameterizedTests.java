@@ -25,7 +25,7 @@ class ParameterizedTests extends TestBase{
 
     static Stream<Arguments> searchProductName() {
         return Stream.of(
-                Arguments.of("монитор acer", "Монитор 17\" Acer V176Lb TN"),
+                Arguments.of("монитор asus VP228DE", "Монитор 21.5\" ASUS VP228DE TN"),
                 Arguments.of("телефон xiaomi", "Гибридная защитная пленка Red Line"),
                 Arguments.of("ssd samsung", "Твердотельный накопитель (SSD) Samsung 1Tb 970 EVO Plus")
         );
@@ -39,7 +39,7 @@ class ParameterizedTests extends TestBase{
     }
 
     @CsvSource(value = {
-            "'монитор acer', 'Монитор 17\"Acer V176Lb TN'",
+            "'монитор asus VP228DE', 'Монитор 21.5\" ASUS VP228DE TN'",
             "'телефон xiaomi', 'Гибридная защитная пленка Red Line'",
             "'ssd samsung', 'Твердотельный накопитель (SSD) Samsung 1Tb 970 EVO Plus'"
     })

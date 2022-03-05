@@ -1,15 +1,12 @@
 package pages;
 
-import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.impl.CollectionElement;
 import lombok.Getter;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class E2e4Page {
     SelenideElement search = $("#search"),
@@ -19,7 +16,7 @@ public class E2e4Page {
     ElementsCollection resultList = $$("#view_list");
 
     public E2e4Page openPage() {
-        open("https://e2e4online.ru");
+        open("https://novosibirsk.e2e4online.ru");
         return this;
     }
 
